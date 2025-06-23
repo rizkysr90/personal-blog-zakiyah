@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Zakiyah Khoirunnisa | Social Media Specialist</title>
+    <!-- Add Tailwind CSS (online development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Playpen Sans, 'sans serif'
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(5deg);
+            }
+        }
+
+        .border-3 {
+            border-width: 3px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 pt-[96px]">
+    <!-- Header -->
+    <header
+        class="fixed inset-x-0 z-40 top-0 bg-white text-black h-[96px] py-5 lg:py-6 border-t-2 border-b-2 border-black">
+        <div class="container px-4 lg:px-8 mx-auto flex justify-between items-center">
+            <div class="text-3xl font-extrabold">Zakiyah Khoirunnisa</div>
+            <!-- toggle -->
+            <button data-toggle="#target-nav"
+                class="[&.show_.btn-open]:!hidden [&.show_.btn-close]:!block w-12 h-12 flex items-center justify-center border-2 border-black rounded lg:hidden shadow-[2px_2px_0_0_#000000]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-open block bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <!-- close -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-close hidden bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+
+            <!-- navbar -->
+            <div id="target-nav"
+                class="uppercase max-lg:fixed max-lg:w-72 max-lg:inset-y-0 max-lg:left-0 max-lg:[&.show]:translate-x-0 max-lg:bg-white max-lg:border-r-2 max-lg:border-black max-lg:z-50 max-lg:-translate-x-full transform duration-300">
+                <nav class="max-lg:flex max-lg:flex-col max-lg:h-full max-lg:overflow-auto lg:space-x-4">
+                    <a href="index.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#5BBCFF] [&.active]:text-[#5BBCFF]">Home</a>
+                    <a href="about.html"
+                        class="active max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#5BBCFF] [&.active]:text-[#5BBCFF]">About</a>
+                    <a href="works.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#5BBCFF] [&.active]:text-[#5BBCFF]">Works</a>
+                    <a href="blogs.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#5BBCFF] [&.active]:text-[#5BBCFF]">Blogs</a>
+                    <a href="contact.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#5BBCFF] [&.active]:text-[#5BBCFF]">Contact</a>
+                </nav>
+            </div>
+
+            <!-- bg mobile sidebar -->
+            <button data-toggle="#target-nav"
+                class="max-lg:fixed max-lg:bg-black max-lg:[&.show]:inset-0 max-lg:opacity-0 max-lg:[&.show]:opacity-70 transform duration-300 lg:hidden"></button>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- About Hero Section -->
+        <section class="relative bg-white border-b-4 border-black overflow-hidden min-h-[70vh] flex items-center">
+            <!-- Brutalist Grid Background -->
+            <div class="absolute inset-0 opacity-5">
+                <div class="grid grid-cols-12 gap-0 h-full">
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                    <div class="border-r border-black"></div>
+                </div>
+            </div>
+
+            <!-- Floating Geometric Elements -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <!-- Large floating rectangle -->
+                <div class="absolute top-12 right-12 w-32 h-20 border-4 border-black transform rotate-12 animate-pulse"
+                    style="background-color: #5BBCFF; animation-duration: 3s;"></div>
+
+                <!-- Medium triangle -->
+                <div class="absolute top-32 left-16 w-0 h-0 transform -rotate-45"
+                    style="border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 50px solid #FFFAB7; animation: float 4s ease-in-out infinite;">
+                </div>
+
+                <!-- Small squares -->
+                <div class="absolute bottom-24 right-1/4 w-16 h-16 border-3 border-black transform rotate-45"
+                    style="background-color: #5BBCFF; animation: float 5s ease-in-out infinite reverse;"></div>
+
+                <!-- Diagonal lines -->
+                <div class="absolute top-1/3 left-8 w-1 h-32 bg-black transform rotate-45 opacity-30"></div>
+                <div class="absolute bottom-1/3 right-8 w-1 h-24 bg-black transform -rotate-45 opacity-30"></div>
+
+                <!-- Brutalist stamp effect -->
+                <div class="absolute top-8 left-1/3 px-4 py-2 border-2 border-dashed border-black transform -rotate-6"
+                    style="background-color: #FFFAB7; font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold;">
+                    SOCIAL MEDIA
+                </div>
+            </div>
+
+            <div class="container px-4 lg:px-8 mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div class="order-2 lg:order-1">
+                        <!-- Brutalist title block -->
+                        <div class="relative mb-8">
+                            <div class="absolute -top-2 -left-2 w-full h-full border-4 border-black"
+                                style="background-color: #FFFAB7;"></div>
+                            <div class="relative bg-white border-4 border-black p-6">
+                                <h1 class="text-5xl lg:text-6xl font-black mb-2 transform -skew-x-3"
+                                    style="color: #5BBCFF; text-shadow: 4px 4px 0px #000;">
+                                    ABOUT
+                                </h1>
+                                <div class="w-20 h-2 bg-black transform skew-x-12"></div>
+                            </div>
+                        </div>
+
+                        <!-- Description with brutalist styling -->
+                        <div class="relative">
+                            <!-- Quote marks -->
+                            <div class="absolute -top-4 -left-4 text-6xl font-black opacity-20" style="color: #5BBCFF;">
+                                "</div>
+
+                            <p
+                                class="text-xl lg:text-2xl leading-relaxed font-semibold text-gray-800 relative z-10 mb-6">
+                                Passionate about building
+                                <span class="relative inline-block">
+                                    <span class="relative z-10 px-2 py-1 font-black text-white">engaging online
+                                        communities</span>
+                                    <span
+                                        class="absolute inset-0 transform translate-x-1 translate-y-1 border-2 border-black"
+                                        style="background-color: #5BBCFF;"></span>
+                                </span>
+                                and driving meaningful connections between brands and their audiences.
+                            </p>
+
+                            <div class="absolute -bottom-2 -right-4 text-6xl font-black opacity-20"
+                                style="color: #5BBCFF;">"</div>
+                        </div>
+
+                        <!-- Stats boxes -->
+                        <div class="grid grid-cols-3 gap-4 mt-8">
+                            <div class="text-center p-4 border-3 border-black transform -rotate-1"
+                                style="background-color: #FFFAB7;">
+                                <div class="text-2xl font-black" style="color: #5BBCFF;">4+</div>
+                                <div class="text-xs font-bold uppercase">Years</div>
+                            </div>
+                            <div class="text-center p-4 border-3 border-black transform rotate-1"
+                                style="background-color: #5BBCFF;">
+                                <div class="text-2xl font-black text-white">50+</div>
+                                <div class="text-xs font-bold text-white uppercase">Projects</div>
+                            </div>
+                            <div class="text-center p-4 border-3 border-black transform -rotate-1 bg-white">
+                                <div class="text-2xl font-black" style="color: #5BBCFF;">15+</div>
+                                <div class="text-xs font-bold uppercase">Clients</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content - Image with brutalist frame -->
+                    <div class="order-1 lg:order-2">
+                        <div class="relative mx-auto max-w-md">
+                            <!-- Multiple layered frames for depth -->
+                            <div class="absolute top-4 left-4 w-full h-full border-4 border-black"
+                                style="background-color: #FFFAB7;"></div>
+                            <div class="absolute top-2 left-2 w-full h-full border-4 border-black"
+                                style="background-color: #5BBCFF;"></div>
+
+                            <!-- Main image container -->
+                            <div class="relative bg-white border-4 border-black overflow-hidden">
+                                <!-- You can replace this with your actual image -->
+                                <div
+                                    class="aspect-square bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                                    <div class="w-32 h-32 rounded-full border-4 border-black"
+                                        style="background-color: #5BBCFF;">
+                                        <!-- Placeholder for your photo -->
+                                        <div
+                                            class="w-full h-full rounded-full bg-white flex items-center justify-center">
+                                            <span class="text-2xl font-black" style="color: #5BBCFF;">Me</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Brutalist overlay elements -->
+                                <div
+                                    class="absolute top-4 right-4 px-3 py-1 bg-black text-white text-xs font-bold transform rotate-12">
+                                    SPECIALIST
+                                </div>
+                                <div class="absolute bottom-4 left-4 px-3 py-1 border-2 border-black text-xs font-bold transform -rotate-6"
+                                    style="background-color: #FFFAB7;">
+                                    SOCIAL MEDIA
+                                </div>
+                            </div>
+
+                            <!-- Floating elements around image -->
+                            <div class="absolute -top-6 -right-6 w-12 h-12 border-3 border-black flex items-center justify-center font-black transform rotate-12"
+                                style="background-color: #FFFAB7; animation: float 3s ease-in-out infinite;">
+                                ★
+                            </div>
+                            <div class="absolute -bottom-6 -left-6 w-16 h-16 border-3 border-black flex items-center justify-center font-black transform -rotate-12"
+                                style="background-color: #5BBCFF; color: white; animation: float 4s ease-in-out infinite reverse;">
+                                ♦
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom decorative elements -->
+                <div class="flex justify-center mt-12">
+                    <div class="flex items-center gap-4">
+                        <div class="w-8 h-1 bg-black transform skew-x-12"></div>
+                        <div class="w-3 h-3 border-2 border-black transform rotate-45"
+                            style="background-color: #5BBCFF;"></div>
+                        <div class="w-12 h-1 bg-black"></div>
+                        <div class="w-3 h-3 border-2 border-black transform rotate-45"
+                            style="background-color: #FFFAB7;"></div>
+                        <div class="w-8 h-1 bg-black transform -skew-x-12"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white py-16 border-b-4 border-black relative overflow-hidden">
+            <!-- Brutalist background pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <div class="h-full w-full"
+                    style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #000 10px, #000 12px);">
+                </div>
+            </div>
+
+            <!-- Floating geometric elements -->
+            <div class="absolute top-8 right-8 w-16 h-16 border-4 border-black transform rotate-12"
+                style="background-color: #FFFAB7; animation: float 6s ease-in-out infinite;"></div>
+            <div class="absolute bottom-12 left-12 w-8 h-20 border-3 border-black transform -rotate-12"
+                style="background-color: #5BBCFF; animation: float 4s ease-in-out infinite reverse;"></div>
+
+            <div class="container px-4 lg:px-8 mx-auto relative">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <!-- Skills Content -->
+                    <div class="order-2 lg:order-1">
+                        <!-- Brutalist section title -->
+                        <div class="relative mb-12">
+                            <div class="absolute -top-2 -left-2 px-6 py-3 border-3 border-black transform -rotate-2"
+                                style="background-color: #5BBCFF;">
+                                <h2 class="text-3xl lg:text-4xl font-black text-white transform rotate-2">PROFESSIONAL
+                                </h2>
+                            </div>
+                            <div class="relative px-6 py-3 bg-black border-3 border-black">
+                                <h2 class="text-3xl lg:text-4xl font-black text-white">SKILLS</h2>
+                            </div>
+                            <!-- Decorative elements -->
+                            <div class="absolute -bottom-4 -right-4 w-8 h-8 border-2 border-black transform rotate-45"
+                                style="background-color: #FFFAB7;"></div>
+                        </div>
+
+                        <!-- Skills container with brutalist design -->
+                        <div class="relative">
+                            <!-- Main skills box with multiple layers -->
+                            <div class="absolute top-4 left-4 w-full h-full border-4 border-black"
+                                style="background-color: #FFFAB7;"></div>
+                            <div class="relative bg-white border-4 border-black p-8 transform duration-700 opacity-0 translate-y-20"
+                                data-view="!opacity-100 !translate-y-0">
+
+                                <!-- Skill items with brutalist styling -->
+                                <div class="space-y-8">
+                                    <!-- Social Media Management -->
+                                    <div class="skill-item">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <div class="relative">
+                                                <span class="font-black text-lg text-gray-800 relative z-10">SOCIAL
+                                                    MEDIA</span>
+                                                <div class="absolute -bottom-1 left-0 w-full h-2 transform skew-x-12"
+                                                    style="background-color: #5BBCFF; opacity: 0.3;"></div>
+                                            </div>
+                                            <div class="px-3 py-1 border-2 border-black font-black text-sm transform -rotate-3"
+                                                style="background-color: #FFFAB7;">
+                                                95%
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-full h-6 bg-gray-200 border-3 border-black transform -skew-x-2">
+                                                <div class="h-full transition-all duration-1500 transform skew-x-2 border-r-2 border-black"
+                                                    style="width: 95%; background-color: #5BBCFF;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Strategy -->
+                                    <div class="skill-item">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <div class="relative">
+                                                <span class="font-black text-lg text-gray-800 relative z-10">CONTENT
+                                                    STRATEGY</span>
+                                                <div class="absolute -bottom-1 left-0 w-full h-2 transform skew-x-12"
+                                                    style="background-color: #FFFAB7; opacity: 0.6;"></div>
+                                            </div>
+                                            <div class="px-3 py-1 border-2 border-black font-black text-sm transform rotate-2"
+                                                style="background-color: #5BBCFF; color: white;">
+                                                90%
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-full h-6 bg-gray-200 border-3 border-black transform skew-x-2">
+                                                <div class="h-full transition-all duration-1500 transform -skew-x-2 border-r-2 border-black"
+                                                    style="width: 90%; background-color: #FFFAB7;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Analytics & Reporting -->
+                                    <div class="skill-item">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <div class="relative">
+                                                <span
+                                                    class="font-black text-lg text-gray-800 relative z-10">ANALYTICS</span>
+                                                <div class="absolute -bottom-1 left-0 w-full h-2 transform skew-x-12"
+                                                    style="background-color: #5BBCFF; opacity: 0.3;"></div>
+                                            </div>
+                                            <div
+                                                class="px-3 py-1 border-2 border-black font-black text-sm transform -rotate-2 bg-black text-white">
+                                                85%
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-full h-6 bg-gray-200 border-3 border-black transform -skew-x-2">
+                                                <div class="h-full transition-all duration-1500 transform skew-x-2 border-r-2 border-black"
+                                                    style="width: 85%; background-color: #5BBCFF;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Digital Marketing -->
+                                    <div class="skill-item">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <div class="relative">
+                                                <span class="font-black text-lg text-gray-800 relative z-10">DIGITAL
+                                                    MARKETING</span>
+                                                <div class="absolute -bottom-1 left-0 w-full h-2 transform skew-x-12"
+                                                    style="background-color: #FFFAB7; opacity: 0.6;"></div>
+                                            </div>
+                                            <div class="px-3 py-1 border-2 border-black font-black text-sm transform rotate-3"
+                                                style="background-color: #FFFAB7;">
+                                                88%
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-full h-6 bg-gray-200 border-3 border-black transform skew-x-2">
+                                                <div class="h-full transition-all duration-1500 transform -skew-x-2 border-r-2 border-black"
+                                                    style="width: 88%; background-color: #FFFAB7;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Community Building -->
+                                    <div class="skill-item">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <div class="relative">
+                                                <span class="font-black text-lg text-gray-800 relative z-10">COMMUNITY
+                                                    BUILD</span>
+                                                <div class="absolute -bottom-1 left-0 w-full h-2 transform skew-x-12"
+                                                    style="background-color: #5BBCFF; opacity: 0.3;"></div>
+                                            </div>
+                                            <div class="px-3 py-1 border-2 border-black font-black text-sm transform -rotate-1"
+                                                style="background-color: #5BBCFF; color: white;">
+                                                92%
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-full h-6 bg-gray-200 border-3 border-black transform -skew-x-2">
+                                                <div class="h-full transition-all duration-1500 transform skew-x-2 border-r-2 border-black"
+                                                    style="width: 92%; background-color: #FFFAB7;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Decorative corner elements -->
+                                <div class="absolute -top-4 -right-4 w-6 h-6 border-2 border-black transform rotate-45"
+                                    style="background-color: #5BBCFF;"></div>
+                                <div class="absolute -bottom-4 -left-4 w-8 h-8 border-2 border-black"
+                                    style="background-color: #FFFAB7;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skills tags with brutalist styling -->
+                        <div class="flex flex-wrap gap-3 mt-8">
+                            <div class="px-4 py-2 border-2 border-black font-bold text-sm transform -rotate-1"
+                                style="background-color: #5BBCFF; color: white;">
+                                INSTAGRAM
+                            </div>
+                            <div class="px-4 py-2 border-2 border-black font-bold text-sm transform rotate-2"
+                                style="background-color: #FFFAB7;">
+                                FACEBOOK
+                            </div>
+                            <div
+                                class="px-4 py-2 border-2 border-black font-bold text-sm transform -rotate-2 bg-black text-white">
+                                TIKTOK
+                            </div>
+                            <div class="px-4 py-2 border-2 border-black font-bold text-sm transform rotate-1"
+                                style="background-color: #FFFAB7;">
+                                LINKEDIN
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Image with brutalist frame -->
+                    <div class="order-1 lg:order-2">
+                        <div class="relative mx-auto max-w-md transform duration-1000 opacity-0 scale-75 delay-200"
+                            data-view="!opacity-100 !scale-100">
+                            <!-- Multiple layered frames -->
+                            <div class="absolute top-6 left-6 w-full h-full border-4 border-black transform rotate-3"
+                                style="background-color: #5BBCFF;"></div>
+                            <div class="absolute top-3 left-3 w-full h-full border-4 border-black transform -rotate-1"
+                                style="background-color: #FFFAB7;"></div>
+
+                            <!-- Main image container -->
+                            <div class="relative bg-white border-4 border-black overflow-hidden transform -rotate-2">
+                                <!-- Replace with your actual image -->
+                                <div class="aspect-square relative">
+                                    <img src="src/img/me.png" alt="Professional Skills"
+                                        class="w-full h-full object-cover">
+
+                                    <!-- Brutalist overlay elements -->
+                                    <div
+                                        class="absolute top-4 right-4 px-3 py-2 bg-black text-white text-xs font-black transform rotate-12 border-2 border-white">
+                                        EXPERT
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 px-3 py-2 border-2 border-black text-xs font-black transform -rotate-6"
+                                        style="background-color: #FFFAB7;">
+                                        4+ YEARS
+                                    </div>
+
+                                    <!-- Geometric overlay -->
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border-3 border-white opacity-20"
+                                        style="background-color: #5BBCFF;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Floating skill icons with brutalist styling -->
+                            <div class="absolute -top-4 -right-4 w-16 h-16 border-3 border-black flex items-center justify-center font-black text-xl transform rotate-12"
+                                style="background-color: #5BBCFF; color: white; animation: float 3s ease-in-out infinite;">
+                                📱
+                            </div>
+                            <div class="absolute -bottom-4 -left-4 w-12 h-12 border-3 border-black flex items-center justify-center font-black transform -rotate-12"
+                                style="background-color: #FFFAB7; animation: float 4s ease-in-out infinite reverse;">
+                                📊
+                            </div>
+                            <div class="absolute top-1/4 -left-6 w-10 h-10 border-2 border-black flex items-center justify-center font-bold text-sm transform rotate-45"
+                                style="background-color: #FFFAB7; animation: float 5s ease-in-out infinite;">
+                                💡
+                            </div>
+                            <div class="absolute bottom-1/4 -right-6 w-14 h-8 border-2 border-black flex items-center justify-center font-black text-xs transform -rotate-45"
+                                style="background-color: #5BBCFF; color: white; animation: float 6s ease-in-out infinite reverse;">
+                                SOCIAL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience Section -->
+        <section class="py-16 border-b-2 border-black" style="background-color: #FFFAB7;">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Experience Item 1 -->
+                    <div class="relative mb-8 transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-black flex items-center justify-center font-bold text-white"
+                                style="background-color: #5BBCFF;">
+                                1
+                            </div>
+                            <div
+                                class="flex-1 bg-white p-6 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                                    <h3 class="text-xl font-bold text-gray-800">Senior Social Media Specialist</h3>
+                                    <span class="text-sm font-semibold px-3 py-1 rounded-full border border-black"
+                                        style="background-color: #FFFAB7;">2023-Present</span>
+                                </div>
+                                <p class="font-semibold mb-3" style="color: #5BBCFF;">Digital Marketing Agency -
+                                    CreativeFlow</p>
+                                <p class="text-gray-700">Leading social media strategy and content creation for 15+
+                                    clients across various industries. Increased average engagement rates by 65% and
+                                    follower growth by 40% through data-driven campaigns and community building
+                                    initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative mb-8 transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-black flex items-center justify-center font-bold text-white"
+                                style="background-color: #5BBCFF;">
+                                2
+                            </div>
+                            <div
+                                class="flex-1 bg-white p-6 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                                    <h3 class="text-xl font-bold text-gray-800">Social Media Manager</h3>
+                                    <span class="text-sm font-semibold px-3 py-1 rounded-full border border-black"
+                                        style="background-color: #FFFAB7;">2021-2023</span>
+                                </div>
+                                <p class="font-semibold mb-3" style="color: #5BBCFF;">E-commerce Startup - TrendyHub</p>
+                                <p class="text-gray-700">Managed end-to-end social media operations including content
+                                    planning, community management, and influencer partnerships. Successfully grew
+                                    Instagram following from 5K to 50K+ and achieved 300% increase in social commerce
+                                    sales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative mb-8 transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-black flex items-center justify-center font-bold text-white"
+                                style="background-color: #5BBCFF;">
+                                3
+                            </div>
+                            <div
+                                class="flex-1 bg-white p-6 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                                    <h3 class="text-xl font-bold text-gray-800">Digital Marketing Coordinator</h3>
+                                    <span class="text-sm font-semibold px-3 py-1 rounded-full border border-black"
+                                        style="background-color: #FFFAB7;">2020-2021</span>
+                                </div>
+                                <p class="font-semibold mb-3" style="color: #5BBCFF;">Tech Company - InnovateTech
+                                    Solutions</p>
+                                <p class="text-gray-700">Assisted in developing comprehensive digital marketing
+                                    strategies with focus on social media campaigns. Collaborated with design and
+                                    content teams to create engaging multimedia content that increased brand awareness
+                                    by 45%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-white py-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Education & Certifications</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Education Card 1 -->
+                    <div class="transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="p-6 rounded-xl border-2 border-black shadow-[6px_6px_0_0_#000000] h-full"
+                            style="background-color: #5BBCFF;">
+                            <div class="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center mb-4"
+                                style="background-color: #FFFAB7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14.975 6.5a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 7.515 1.019 5.5 8 3.485 14.981 5.5 8 7.515Z" />
+                                    <path
+                                        d="M4.5 12.5a.5.5 0 0 1-.5-.5v-2.293l3.5 1.4a.5.5 0 0 0 .372 0L11 9.707V12a.5.5 0 0 1-.5.5h-6Z" />
+                                    <path
+                                        d="M1.5 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H2v7h12V6h-.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H1.5a.5.5 0 0 1-.5-.5v-8Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Bachelor's Degree in Marketing</h3>
+                            <p class="text-white font-medium mb-2">University of Jakarta</p>
+                            <p class="text-blue-100 text-sm mb-4">2018-2022 | GPA: 3.8/4.0</p>
+                            <p class="text-white">Specialized in Digital Marketing and Consumer Behavior. Completed
+                                thesis on "Social Media Influence on Consumer Purchase Decisions".</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Card 2 -->
+                    <div class="transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="p-6 rounded-xl border-2 border-black shadow-[6px_6px_0_0_#000000] h-full"
+                            style="background-color: #FFFAB7;">
+                            <div class="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center mb-4"
+                                style="background-color: #5BBCFF;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Social Media Marketing Certification</h3>
+                            <p class="text-gray-700 font-medium mb-2">Google Digital Marketing Institute</p>
+                            <p class="text-gray-600 text-sm mb-4">2023 | Advanced Level</p>
+                            <p class="text-gray-700">Comprehensive certification covering social media strategy, content
+                                marketing, analytics, and paid advertising across all major platforms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certification Card 3 -->
+                    <div class="transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="p-6 rounded-xl border-2 border-black shadow-[6px_6px_0_0_#000000] h-full"
+                            style="background-color: #FFFAB7;">
+                            <div class="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center mb-4"
+                                style="background-color: #5BBCFF;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Facebook & Instagram Marketing</h3>
+                            <p class="text-gray-700 font-medium mb-2">Meta Business Academy</p>
+                            <p class="text-gray-600 text-sm mb-4">2022 | Professional Level</p>
+                            <p class="text-gray-700">Advanced certification in Facebook and Instagram advertising,
+                                including audience targeting, campaign optimization, and performance analytics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certification Card 4 -->
+                    <div class="transform duration-700 opacity-0 translate-y-20 delay-700"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="p-6 rounded-xl border-2 border-black shadow-[6px_6px_0_0_#000000] h-full"
+                            style="background-color: #5BBCFF;">
+                            <div class="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center mb-4"
+                                style="background-color: #FFFAB7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Content Marketing Specialist</h3>
+                            <p class="text-white font-medium mb-2">HubSpot Academy</p>
+                            <p class="text-blue-100 text-sm mb-4">2023 | Expert Level</p>
+                            <p class="text-white">Comprehensive training in content strategy, creation, distribution,
+                                and performance measurement across digital channels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 border-t-2 border-black" style="background-color: #FFFAB7;">
+            <div class="container px-4 lg:px-8 mx-auto text-center">
+                <div class="transform duration-1000 opacity-0 scale-75 delay-100" data-view="!opacity-100 !scale-100">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Let's Work Together!</h2>
+                    <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
+                        Ready to take your social media presence to the next level? I'd love to help you build engaging
+                        communities and drive meaningful results.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a class="group py-4 px-6 relative inline-flex flex-row items-center justify-center gap-x-3 rounded-lg font-bold text-lg tracking-wide border-2 border-black hover:-translate-y-1 transform duration-300 shadow-[4px_4px_0_0_#000000] hover:shadow-[6px_6px_0_0_#000000] focus:-translate-y-1 text-white"
+                            href="contact.html" style="background-color: #5BBCFF;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            <span class="relative z-10">Get In Touch</span>
+                        </a>
+
+                        <a class="py-4 px-6 relative inline-flex flex-row items-center justify-center gap-x-3 rounded-lg font-semibold text-lg border-2 hover:-translate-y-1 transform duration-300 text-gray-800 bg-transparent hover:bg-gray-800 hover:text-white"
+                            href="works.html" style="border-color: #5BBCFF;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M4.502 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM4 10.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0z" />
+                                <path
+                                    d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2.002 3a2 2 0 0 1 2-2 2 2 0 0 1 2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2zM14 5a1 1 0 0 0-1-1H9a1 1 0 0 0-1-1 1 1 0 0 0-1 1H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5z" />
+                            </svg>
+                            View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container px-4 lg:px-8 mx-auto">
+            <div class="flex flex-col max-md:text-center md:flex-row max-md:justify-center gap-8 md:justify-between">
+                <nav class="flex flex-col sm:flex-row max-md:mx-auto">
+                    <a href="#" class="max-sm:py-2 px-2">Privacy Policy</a>
+                    <a href="#" class="max-sm:py-2 px-2">Terms of Use</a>
+                    <a href="#" class="max-sm:py-2 px-2">Guidelines</a>
+                </nav>
+                <p>Zakiyah Khoirunnisa &copy; 2025 | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button
+        class="w-10 h-10 flex items-center justify-center bg-white border-2 border-black text-black rounded-full opacity-80 hover:opacity-100 fixed right-4 bottom-4"
+        data-backtop="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-up mx-auto" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+    <script src="src/js/script2.js"></script>
+</body>
+
+</html>
