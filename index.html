@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalist - Neubrutalism Portfolio Tailwind</title>
+    <!-- Add Tailwind CSS (online development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles (npm/tools is required) -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon.jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500;900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Playpen Sans, 'sans serif'
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 pt-[96px]">
+    <!-- Header -->
+    <header
+        class="fixed inset-x-0 z-40 top-0 bg-white text-black h-[96px] py-5 lg:py-6 border-t-2 border-b-2 border-black">
+        <div class="container px-4 lg:px-8 mx-auto flex justify-between items-center">
+            <div class="text-3xl font-extrabold">Zakiyah Khoirunnisa</div>
+            <!-- toggle -->
+            <button data-toggle="#target-nav"
+                class="[&.show_.btn-open]:!hidden [&.show_.btn-close]:!block w-12 h-12 flex items-center justify-center border-2 border-black rounded lg:hidden shadow-[2px_2px_0_0_#000000]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-open block bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <!-- close -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-close hidden bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+
+            <!-- navbar -->
+            <div id="target-nav"
+                class="uppercase max-lg:fixed max-lg:w-72 max-lg:inset-y-0 max-lg:left-0 max-lg:[&.show]:translate-x-0 max-lg:bg-white max-lg:border-r-2 max-lg:border-black max-lg:z-50 max-lg:-translate-x-full transform duration-300">
+                <nav class="max-lg:flex max-lg:flex-col max-lg:h-full max-lg:overflow-auto lg:space-x-4">
+                    <a href="#"
+                        class="active max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Home</a>
+                    <a href="#"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">About</a>
+                    <a href="#"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Works</a>
+                    <a href="#"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Blogs</a>
+                    <a href="#"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Contact</a>
+                </nav>
+            </div>
+
+            <!-- bg mobile sidebar -->
+            <button data-toggle="#target-nav"
+                class="max-lg:fixed max-lg:bg-black max-lg:[&.show]:inset-0 max-lg:opacity-0 max-lg:[&.show]:opacity-70 transform duration-300 lg:hidden"></button>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- hero start -->
+        <section id="hero" class="relative bg-neutral-100 border-b-2 border-black overflow-hidden z-0">
+            <div class="absolute inset-y-0 right-auto left-0 h-full w-1/2 bg-[#fec494]" style="z-index: -1;"></div>
+            <!-- background overlay -->
+            <div style="background-image: url(src/img/cartographer.png);"
+                class="absolute top-0 right-0 left-auto w-full md:w-1/2 h-full bg-[#02d1c3]" style="z-index:-1;"></div>
+
+            <div class="container px-4 lg:px-8 mx-auto">
+                <!-- row -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+                    <!-- hero image -->
+                    <div class="hidden md:block order-2 lg:pl-12">
+                        <figure class="relative transform duration-1000 opacity-0 scale-75 delay-100"
+                            data-view="!opacity-100 !scale-100">
+                            <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" stroke="black" stroke-width="1"
+                                    d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
+                                    transform="translate(100 100)" />
+                                <defs>
+                                    <clipPath id="ones">
+                                        <path fill="#FF0066"
+                                            d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
+                                            transform="translate(100 100)" />
+                                    </clipPath>
+                                </defs>
+                                <image transform="matrix(1 0 0 1 0 0)" clip-path="url(#ones)"
+                                    xlink:href="src/img/me.png" width="235" height="200"></image>
+                            </svg>
+                        </figure>
+                    </div>
+
+                    <!-- hero content -->
+                    <div class="order-1 xl:pr-12 xl:py-16">
+                        <div class="text-left lg:mr-8 py-16 md:pb-0 lg:py-16 transform duration-1000 opacity-0 translate-y-8 delay-100"
+                            data-view="!opacity-100 !translate-y-0">
+                            <h1 class="text-4xl lg:text-5xl leading-tight font-bold text-black mb-6">I'am Zakiyah
+                                Khoirunnisa,
+                                Social Media Specialist</h1>
+                            <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto mb-8">
+                                Passionate about building engaging online communities and driving meaningful
+                                connections between brands and their audiences. With extensive experience in content
+                                strategy, community management, and social media analytics, I help businesses grow their
+                                online presence and achieve their digital marketing goals.</p>
+
+                            <a class="py-3 px-4 relative inline-flex flex-row items-center justify-center gap-x-2 rounded font-bold text-lg tracking-[.00714em] border-2 border-black hover:-translate-y-0.5 transform duration-200 shadow-[4px_4px_0_0_#000000] focus:-translate-y-0.5 bg-yellow-300 text-black"
+                                href="#">
+                                About Me
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- marque -->
+        <section class="border-b-2 border-black">
+            <div class="marquee py-3 text-2xl font-bold w-full">
+                <a href="works.html">Welcome to Zakiyah Khoirunnisa portfolio, Where creativity meets strategy for
+                    social media success!</a>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="bg-white py-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Featured Works</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/1.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/1.jpg" alt="Project 1"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog1"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog1"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog1"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Logo Redesign for XYZ Company</h3>
+                            <p>Redesigned the logo for XYZ Company to give it a modern and vibrant look that reflects
+                                their brand
+                                identity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/2.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/2.jpg" alt="Project 2"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog2"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog2"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog2"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Branding Package for ABC Startup</h3>
+                            <p>Developed a comprehensive branding package for ABC Startup, including a new logo,
+                                business cards, and
+                                marketing materials.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/3.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/3.jpg" alt="Project 3"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog3"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog3"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog3"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Print Campaign for Events and Promotions</h3>
+                            <p>Designed a series of eye-catching print materials for events and promotions, ensuring a
+                                cohesive and
+                                memorable brand presence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/4.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/4.jpg" alt="Project 4"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog4"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog4"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog4"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Website UI/UX for Tech Innovations</h3>
+                            <p>Created a modern and user-friendly UI/UX design for the website of Tech Innovations,
+                                enhancing user
+                                engagement and satisfaction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/5.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/5.jpg" alt="Project 5"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog5"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog5"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog5"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Social Media Graphics for Lifestyle Brand</h3>
+                            <p>Developed visually appealing graphics for a lifestyle brand's social media channels,
+                                increasing brand
+                                visibility and engagement.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/6.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/6.jpg" alt="Project 6"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog6"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog6"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog6"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Packaging Design for Organic Products</h3>
+                            <p>Crafted eco-friendly and attractive packaging designs for a line of organic products,
+                                emphasizing
+                                sustainability and brand appeal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/7.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/7.jpg" alt="Project 7"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog7"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog7"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog7"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Logo Redesign for XYZ Company</h3>
+                            <p>Redesigned the logo for XYZ Company to give it a modern and vibrant look that reflects
+                                their brand
+                                identity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/8.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/8.jpg" alt="Project 8"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog8"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog8"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog8"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Branding Package for ABC Startup</h3>
+                            <p>Developed a comprehensive branding package for ABC Startup, including a new logo,
+                                business cards, and
+                                marketing materials.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="relative bg-white rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] overflow-hidden transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <a href="src/img/works/9.jpg" data-gallery="gallery1">
+                            <img src="src/img/works/9.jpg" alt="Project 9"
+                                class="glightbox3 w-full hover:scale-110 duration-1000">
+                        </a>
+                        <!-- toggle -->
+                        <button data-toggle="#catalog9"
+                            class="absolute [&.show]:!hidden left-2 text-sm bottom-2 py-2 px-4 bg-black opacity-90 text-white rounded">Detail</button>
+                        <button data-toggle="#catalog9"
+                            class="absolute [&.show]:!flex hidden right-2 text-sm top-2 w-10 h-10 items-center justify-center bg-white text-black border-2 border-black opacity-90 rounded-full z-20">x</button>
+                        <!-- info -->
+                        <div id="catalog9"
+                            class="absolute [&.show]:!translate-y-0 [&.show]:!opacity-100 inset-4 bg-black opacity-0 text-white p-6 rounded-lg translate-y-[120%] transform duration-300 scrollbars overflow-auto">
+                            <h3 class="text-lg font-bold uppercase mb-4">Print Campaign for Events</h3>
+                            <p>Designed a series of eye-catching print materials for events and promotions, ensuring a
+                                cohesive and
+                                memorable brand presence.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="bg-white pt-4 pb-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">My Services</h2>
+
+                <div class="p-8 border-2 border-black bg-purple-300 rounded-xl shadow-[6px_6px_0_0_#000000] transform duration-700 opacity-0 translate-y-20 delay-200"
+                    data-view="!opacity-100 !translate-y-0">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 max-lg:gap-10 gap-8">
+
+                        <!-- Service Card 1 - Content Creation -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-yellow-300 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Content Creation Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                        <path
+                                            d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Content Creation</h3>
+                                <p class="text-gray-700">Create engaging visual content including posts, stories, reels,
+                                    and videos that capture your brand's personality and resonate with your target
+                                    audience.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 - Social Media Strategy -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-[#02d1c3] rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Strategy Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-graph-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Social Media Strategy</h3>
+                                <p class="text-gray-700">Develop comprehensive social media strategies that align with
+                                    your business goals, target the right audience, and maximize engagement across all
+                                    platforms.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 - Digital Marketing -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-[#f32b81] rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Digital Marketing Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-laptop" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Digital Marketing</h3>
+                                <p class="text-gray-700">Comprehensive digital marketing solutions including paid
+                                    advertising, SEO optimization, email marketing, and multi-platform campaigns to
+                                    drive conversions and growth.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 - Campaign Development -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-blue-400 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Campaign Development Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65 65 0 0 1 1.692.064q.491.026.966.06" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Campaign Development</h3>
+                                <p class="text-gray-700">Design and execute targeted social media campaigns that drive
+                                    brand awareness, increase followers, and generate leads for your business.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 - Analytics & Reporting -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-red-300 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Analytics Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Analytics & Reporting</h3>
+                                <p class="text-gray-700">Track performance metrics, analyze audience insights, and
+                                    provide detailed reports to measure ROI and optimize your social media presence.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 - Brand Community Building -->
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                            <div>
+                                <div
+                                    class="relative flex items-center justify-center w-20 h-20 max-sm:mb-2 text-black p-6 bg-lime-300 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000]">
+                                    <!-- Community Building Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-people-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1 md:mb-2">Community Building</h3>
+                                <p class="text-gray-700">Foster authentic relationships with your audience through
+                                    strategic engagement, user-generated content, and building a loyal community around
+                                    your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="bg-white border-b-2 border-black pb-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial -->
+                    <div class="bg-[#00a6a2] py-6 px-8 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] transform duration-700 opacity-0 translate-y-20"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="src/img/avatars/avatar.jpg" alt="Client 1"
+                                class="w-12 h-12 rounded-full inline-block border-2 border-black bg-yellow-300">
+                            <div class="inline-block">
+                                <h3 class="text-lg font-bold">Ameng</h3>
+                                <p class="text-gray-600">Alifah Clinic</p>
+                            </div>
+                        </div>
+                        <!-- rating -->
+                        <div class="flex mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700">Working with Zakiyah was an incredible experience. Their attention to
+                            detail and
+                            creative flair brought our vision to life. Highly recommended!</p>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="bg-[#00a6a2] py-6 px-8 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] transform duration-700 opacity-0 translate-y-20 delay-200"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="src/img/avatars/avatar2.jpg" alt="Client 2"
+                                class="w-12 h-12 rounded-full inline-block border-2 border-black bg-yellow-300">
+                            <div class="inline-block">
+                                <h3 class="text-lg font-bold">Sheila</h3>
+                                <p class="text-gray-600">Alyafa Salon</p>
+                            </div>
+                        </div>
+                        <!-- rating -->
+                        <div class="flex mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700">Impressed with the level of professionalism and creativity. Zakiyah
+                            is
+                            a true
+                            talent in the world of graphic design.</p>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="bg-[#00a6a2] py-6 px-8 rounded-lg border-2 border-black shadow-[6px_6px_0_0_#000000] transform duration-700 opacity-0 translate-y-20 delay-500"
+                        data-view="!opacity-100 !translate-y-0">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="src/img/avatars/avatar3.jpg" alt="Client 3"
+                                class="w-12 h-12 rounded-full inline-block border-2 border-black bg-yellow-300">
+                            <div class="inline-block">
+                                <h3 class="text-lg font-bold">Rizki Susilo Ramadhan</h3>
+                                <p class="text-gray-600">PT BFI Finance Indonesia TBK</p>
+                            </div>
+                        </div>
+                        <!-- rating -->
+                        <div class="flex mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#fedf63" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 inline-block">
+                                <polygon fill="#fedf63"
+                                    points="12 2 15.092 8.82 22 9.18 17 14 18.182 21.82 12 17.6 5.818 21.82 7 14 2 9.18 8.908 9.18">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700">Exceptional design skills and a pleasure to work with. Zakiyah
+                            consistently
+                            delivers high-quality results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section style="background-image: url(src/img/cartographer.png);" class="bg-[#2196f3] text-white py-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <div class="text-center transform duration-1000 opacity-0 scale-75 delay-100"
+                    data-view="!opacity-100 !scale-100">
+                    <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+                    <p class="text-lg mb-8">If you're interested in working together or have any further questions, feel
+                        free to
+                        contact us.</p>
+
+                    <a class="py-3 px-4 relative inline-flex flex-row items-center justify-center gap-x-4 rounded font-bold text-lg tracking-[.00714em] border-2 border-black hover:-translate-y-0.5 transform duration-200 shadow-[4px_4px_0_0_#000000] focus:-translate-y-0.5 bg-yellow-300 text-black"
+                        href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg>
+                        Lets Talk!
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container px-4 lg:px-8 mx-auto">
+            <div class="flex flex-col max-md:text-center md:flex-row max-md:justify-center gap-8 md:justify-between">
+                <nav class="flex flex-col sm:flex-row max-md:mx-auto">
+                    <a href="#" class="max-sm:py-2 px-2">Privacy Policy</a>
+                    <a href="#" class="max-sm:py-2 px-2">Terms of Use</a>
+                    <a href="#" class="max-sm:py-2 px-2">Guideline</a>
+                </nav>
+                <p>Zakiyah Khoirunnisa &copy; 2025 | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button
+        class="w-10 h-10 flex items-center justify-center bg-white border-2 border-black text-black rounded-full opacity-80 hover:opacity-100 fixed right-4 bottom-4"
+        data-backtop="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-up mx-auto" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+    <script src="src/js/script2.js"></script>
+</body>
+
+</html>
