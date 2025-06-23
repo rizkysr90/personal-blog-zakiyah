@@ -69,11 +69,46 @@
 
     <main class="overflow-hidden">
         <!-- hero start -->
-        <section id="hero" class="relative bg-neutral-100 border-b-2 border-black overflow-hidden z-0">
-            <div class="absolute inset-y-0 right-auto left-0 h-full w-1/2 bg-[#fec494]" style="z-index: -1;"></div>
-            <!-- background overlay -->
-            <div style="background-image: url(src/img/cartographer.png);"
-                class="absolute top-0 right-0 left-auto w-full md:w-1/2 h-full bg-[#02d1c3]" style="z-index:-1;"></div>
+        <section id="hero" class="relative bg-blue-50 border-b-2 border-black overflow-hidden z-0">
+            <!-- Creative geometric background shapes -->
+            <div class="absolute inset-y-0 right-auto left-0 h-full w-1/2"
+                style="background: linear-gradient(135deg, #FFFAB7 0%, #F0E68C 100%); z-index: -1;"></div>
+
+            <!-- Animated floating circles -->
+            <div class="absolute top-10 left-10 w-20 h-20 rounded-full opacity-30 animate-pulse"
+                style="background-color: #5BBCFF;"></div>
+            <div class="absolute top-32 right-20 w-16 h-16 rounded-full opacity-50 animate-bounce"
+                style="background-color: #FFFAB7;"></div>
+            <div class="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-40"
+                style="background-color: #5BBCFF;"></div>
+
+            <!-- Creative wave pattern background -->
+            <div class="absolute top-0 right-0 left-auto w-full md:w-1/2 h-full md:block hidden"
+                style="background: linear-gradient(225deg, #5BBCFF 0%, #4A9EE0 100%); z-index:-1;">
+                <!-- Wave pattern overlay -->
+                <div class="absolute inset-0 opacity-20">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <defs>
+                            <pattern id="wave-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <circle cx="10" cy="10" r="2" fill="white" opacity="0.3" />
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#wave-pattern)" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Mobile yellow background - only visible on mobile -->
+            <div class="absolute inset-0 md:hidden"
+                style="background: linear-gradient(135deg, #FFFAB7 0%, #F0E68C 100%); z-index:-1;"></div>
+
+            <!-- Decorative elements -->
+            <!-- <div class="absolute top-1/4 left-1/3 transform -rotate-12">
+                <div class="w-8 h-8 border-2 border-black transform rotate-45" style="background-color: #FFFAB7;"></div>
+            </div> -->
+            <div class="absolute bottom-1/3 right-1/4 transform rotate-12">
+                <div class="w-6 h-6 border-2 border-black rounded-full" style="background-color: #5BBCFF;"></div>
+            </div>
 
             <div class="container px-4 lg:px-8 mx-auto">
                 <!-- row -->
@@ -82,20 +117,43 @@
                     <div class="hidden md:block order-2 lg:pl-12">
                         <figure class="relative transform duration-1000 opacity-0 scale-75 delay-100"
                             data-view="!opacity-100 !scale-100">
-                            <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" stroke="black" stroke-width="1"
-                                    d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
-                                    transform="translate(100 100)" />
-                                <defs>
-                                    <clipPath id="ones">
-                                        <path fill="#FF0066"
-                                            d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
-                                            transform="translate(100 100)" />
-                                    </clipPath>
-                                </defs>
-                                <image transform="matrix(1 0 0 1 0 0)" clip-path="url(#ones)"
-                                    xlink:href="src/img/me.png" width="235" height="200"></image>
-                            </svg>
+                            <!-- Enhanced profile image container -->
+                            <div class="relative">
+                                <!-- Main profile shape -->
+                                <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" class="relative z-10">
+                                    <path fill="#5BBCFF" stroke="black" stroke-width="2"
+                                        d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
+                                        transform="translate(100 100)" />
+                                    <defs>
+                                        <clipPath id="ones">
+                                            <path fill="#5BBCFF"
+                                                d="M36.3,-63.1C48.1,-56.1,59.4,-48.5,62.3,-37.9C65.3,-27.2,59.7,-13.6,59.1,-0.3C58.5,12.9,62.9,25.9,60.4,37.2C57.9,48.5,48.6,58.3,37.4,61.4C26.2,64.5,13.1,61,1.7,58.1C-9.7,55.2,-19.4,52.9,-33.8,51.6C-48.2,50.3,-67.2,50,-69.1,41.6C-71.1,33.2,-55.9,16.6,-55.1,0.5C-54.3,-15.7,-67.9,-31.4,-67.4,-42.1C-66.8,-52.9,-52,-58.7,-38.4,-64.7C-24.8,-70.6,-12.4,-76.8,-0.1,-76.6C12.3,-76.5,24.5,-70.1,36.3,-63.1Z"
+                                                transform="translate(100 100)" />
+                                        </clipPath>
+                                    </defs>
+                                    <image transform="matrix(1 0 0 1 0 0)" clip-path="url(#ones)"
+                                        xlink:href="src/img/me.png" width="235" height="200"></image>
+                                </svg>
+
+                                <!-- Floating social media icons -->
+                                <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full border-2 border-black flex items-center justify-center animate-bounce"
+                                    style="background-color: #FFFAB7;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.374.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+
+                                <div class="absolute -bottom-2 -left-2 w-8 h-8 rounded-full border-2 border-black flex items-center justify-center animate-pulse"
+                                    style="background-color: #5BBCFF;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.017 1.2C11.654 1.2 11.293 1.244 10.936 1.335L10.5 3.4C10.06 3.267 9.604 3.2 9.149 3.2H6.851C6.396 3.2 5.94 3.267 5.5 3.4L5.064 1.335C4.707 1.244 4.346 1.2 3.983 1.2 1.784 1.2 0 3.059 0 5.4V10.6C0 12.941 1.784 14.8 3.983 14.8S7.966 12.941 7.966 10.6V5.4C7.966 3.059 6.182 1.2 3.983 1.2ZM8.5 14.8C10.699 14.8 12.483 12.941 12.483 10.6V5.4C12.483 3.059 10.699 1.2 8.5 1.2C8.137 1.2 7.776 1.244 7.419 1.335L7.855 3.4C8.295 3.267 8.751 3.2 9.206 3.2H11.494C11.949 3.2 12.405 3.267 12.845 3.4L13.281 1.335C13.638 1.244 13.999 1.2 14.362 1.2C16.561 1.2 18.345 3.059 18.345 5.4V10.6C18.345 12.941 16.561 14.8 14.362 14.8H8.5Z" />
+                                    </svg>
+                                </div>
+                            </div>
                         </figure>
                     </div>
 
@@ -103,27 +161,58 @@
                     <div class="order-1 xl:pr-12 xl:py-16">
                         <div class="text-left lg:mr-8 py-16 md:pb-0 lg:py-16 transform duration-1000 opacity-0 translate-y-8 delay-100"
                             data-view="!opacity-100 !translate-y-0">
-                            <h1 class="text-4xl lg:text-5xl leading-tight font-bold text-black mb-6">I'am Zakiyah
-                                Khoirunnisa,
-                                Social Media Specialist</h1>
-                            <p class="text-gray-800 leading-relaxed font-light text-xl mx-auto mb-8">
-                                Passionate about building engaging online communities and driving meaningful
-                                connections between brands and their audiences. With extensive experience in content
-                                strategy, community management, and social media analytics, I help businesses grow their
-                                online presence and achieve their digital marketing goals.</p>
 
-                            <a class="py-3 px-4 relative inline-flex flex-row items-center justify-center gap-x-2 rounded font-bold text-lg tracking-[.00714em] border-2 border-black hover:-translate-y-0.5 transform duration-200 shadow-[4px_4px_0_0_#000000] focus:-translate-y-0.5 bg-yellow-300 text-black"
-                                href="#">
-                                About Me
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                </svg>
-                            </a>
+                            <!-- Clean title with responsive colors -->
+                            <div class="relative mb-6">
+                                <h1
+                                    class="text-4xl lg:text-5xl leading-tight font-bold mb-2 md:text-[#5BBCFF] text-gray-900">
+                                    I'm Zakiyah Khoirunnisa,
+                                </h1>
+                                <h2 class="text-3xl lg:text-4xl leading-tight font-bold relative text-gray-800">
+                                    Social Media Specialist
+                                    <!-- Simple decorative underline -->
+                                    <div
+                                        class="absolute -bottom-2 left-0 w-24 h-1 rounded-full md:bg-[#FFFAB7] bg-[#5BBCFF]">
+                                    </div>
+                                </h2>
+                            </div>
+
+                            <!-- Clean, readable description with responsive colors -->
+                            <p class="text-gray-800 leading-relaxed font-normal text-lg lg:text-xl mx-auto mb-8">
+                                Passionate about building <span
+                                    class="font-semibold md:text-[#5BBCFF] text-[#1e40af]">engaging online
+                                    communities</span> and driving
+                                meaningful connections between brands and their audiences. With extensive experience in
+                                <span class="font-semibold text-[#8B7500]">content strategy</span>, community
+                                management, and social media analytics,
+                                I help businesses grow their online presence and achieve their digital marketing goals.
+                            </p>
+
+                            <!-- Simple, clean CTA button with responsive styling -->
+                            <div class="flex flex-col sm:flex-row gap-4 items-start">
+                                <a class="group py-4 px-6 relative inline-flex flex-row items-center justify-center gap-x-3 rounded-lg font-bold text-lg tracking-wide border-2 border-black hover:-translate-y-1 transform duration-300 shadow-[4px_4px_0_0_#000000] hover:shadow-[6px_6px_0_0_#000000] focus:-translate-y-1 text-black md:bg-[#FFFAB7] bg-[#5BBCFF]"
+                                    href="#">
+                                    <span class="relative z-10 md:text-black text-white">About Me</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="relative z-10 group-hover:translate-x-1 transition-transform duration-300"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Creative bottom wave -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-8">
+                    <path
+                        d="M0,120 L120,80 L240,100 L360,60 L480,90 L600,70 L720,85 L840,75 L960,95 L1080,65 L1200,85 L1200,120 Z"
+                        fill="white" opacity="0.3"></path>
+                </svg>
             </div>
         </section>
 
