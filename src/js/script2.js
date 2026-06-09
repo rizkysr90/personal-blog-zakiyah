@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // TRANSITION ELEMENT
   function handleTransitionElements() {
-    const transitionElements = document.querySelectorAll('[data-view]');
     function isInViewport(element) {
       const rect = element.getBoundingClientRect();
 
@@ -37,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
     function handleTransition() {
+      const transitionElements = document.querySelectorAll('[data-view]');
       transitionElements.forEach(function (element) {
         const dataViewClasses = element.getAttribute('data-view').split(' ');
 
@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     handleTransition();
     window.addEventListener("scroll", handleTransition);
+    document.addEventListener('portfolio:loaded', handleTransition);
   }
   handleTransitionElements();
 
@@ -113,5 +114,36 @@ document.addEventListener("DOMContentLoaded", function () {
     handleBackToTopVisibility();
   }
   handleBackToTop();
+
+  // PORTFOLIO FILTER
+  function handlePortfolioFilter() {
+    const filterContainer = document.getElementById('portfolio-filters');
+    if (!filterContainer || filterContainer.dataset.bound === 'true') return;
+    filterContainer.dataset.bound = 'true';
+
+    filterContainer.addEventListener('click', function (event) {
+      const button = event.target.closest('[data-filter]');
+      if (!button) return;
+
+      const filter = button.getAttribute('data-filter');
+      const filterButtons = filterContainer.querySelectorAll('[data-filter]');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(function (btn) {
+        btn.classList.remove('active', 'bg-black', 'text-white');
+        btn.classList.add('bg-white', 'text-black');
+      });
+      button.classList.add('active', 'bg-black', 'text-white');
+      button.classList.remove('bg-white', 'text-black');
+
+      projectCards.forEach(function (card) {
+        const category = card.getAttribute('data-category');
+        const show = filter === 'all' || category === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  }
+  handlePortfolioFilter();
+  document.addEventListener('portfolio:loaded', handlePortfolioFilter);
 
 });

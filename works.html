@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Zakiyah Khoirunnisa | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500;900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Playpen Sans, 'sans serif'
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 pt-[96px]">
+    <!-- Header -->
+    <header
+        class="fixed inset-x-0 z-40 top-0 bg-white text-black h-[96px] py-5 lg:py-6 border-t-2 border-b-2 border-black">
+        <div class="container px-4 lg:px-8 mx-auto flex justify-between items-center">
+            <div class="text-3xl font-extrabold">Zakiyah Khoirunnisa</div>
+            <button data-toggle="#target-nav"
+                class="[&.show_.btn-open]:!hidden [&.show_.btn-close]:!block w-12 h-12 flex items-center justify-center border-2 border-black rounded lg:hidden shadow-[2px_2px_0_0_#000000]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-open block bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="btn-close hidden bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+
+            <div id="target-nav"
+                class="uppercase max-lg:fixed max-lg:w-72 max-lg:inset-y-0 max-lg:left-0 max-lg:[&.show]:translate-x-0 max-lg:bg-white max-lg:border-r-2 max-lg:border-black max-lg:z-50 max-lg:-translate-x-full transform duration-300">
+                <nav class="max-lg:flex max-lg:flex-col max-lg:h-full max-lg:overflow-auto lg:space-x-4">
+                    <a href="index.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Home</a>
+                    <a href="about.html"
+                        class="max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">About</a>
+                    <a href="works.html"
+                        class="active max-lg:py-3 max-lg:px-4 max-lg:border-b max-lg:border-black hover:text-[#00a6a2] [&.active]:text-[#00a6a2]">Works</a>
+                </nav>
+            </div>
+
+            <button data-toggle="#target-nav"
+                class="max-lg:fixed max-lg:bg-black max-lg:[&.show]:inset-0 max-lg:opacity-0 max-lg:[&.show]:opacity-70 transform duration-300 lg:hidden"></button>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- Hero -->
+        <section class="bg-[#5BBCFF] border-b-2 border-black py-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <div class="max-w-3xl transform duration-700 opacity-0 translate-y-8"
+                    data-view="!opacity-100 !translate-y-0">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4"
+                        style="text-shadow: 3px 3px 0 #000;">My Works</h1>
+                    <p class="text-lg text-white/90 leading-relaxed">
+                        A curated look at campaigns, content, and community work — grouped by deliverable and impact,
+                        with client context where it matters.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="bg-white py-16">
+            <div class="container px-4 lg:px-8 mx-auto">
+                <div id="portfolio-filters" class="flex flex-wrap gap-3 mb-10"></div>
+
+                <div id="portfolio-grid" data-portfolio-mode="all"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container px-4 lg:px-8 mx-auto">
+            <div class="flex flex-col max-md:text-center md:flex-row max-md:justify-center gap-8 md:justify-between">
+                <nav class="flex flex-col sm:flex-row max-md:mx-auto">
+                    <a href="#" class="max-sm:py-2 px-2">Privacy Policy</a>
+                    <a href="#" class="max-sm:py-2 px-2">Terms of Use</a>
+                    <a href="#" class="max-sm:py-2 px-2">Guideline</a>
+                </nav>
+                <p>Zakiyah Khoirunnisa &copy; 2025 | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button
+        class="w-10 h-10 flex items-center justify-center bg-white border-2 border-black text-black rounded-full opacity-80 hover:opacity-100 fixed right-4 bottom-4"
+        data-backtop="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-up mx-auto" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+    <script src="src/js/portfolio.js"></script>
+    <script src="src/js/script2.js"></script>
+</body>
+
+</html>

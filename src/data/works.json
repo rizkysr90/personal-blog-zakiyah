@@ -1,0 +1,91 @@
+{
+  "categories": [
+    { "id": "all", "label": "All" },
+    { "id": "content", "label": "Content" },
+    { "id": "campaign", "label": "Campaigns" },
+    { "id": "marketing", "label": "Marketing" },
+    { "id": "strategy", "label": "Strategy" },
+    { "id": "analytics", "label": "Analytics" },
+    { "id": "community", "label": "Community" }
+  ],
+  "projects": [
+    {
+      "id": "content-lencir",
+      "category": "content",
+      "categoryLabel": "Content",
+      "company": "Lencir Indonesia",
+      "title": "Instagram & TikTok Content Production",
+      "role": "Content Strategy & Production",
+      "outcome": "60+ monthly posts with up to 80% engagement growth",
+      "image": "src/img/works/1.jpg",
+      "imageAlt": "Instagram and TikTok content production",
+      "link": "https://drive.google.com/drive/folders/13_4RGoJmj859Mng-H4XQF3AAN_SEA629?usp=drive_link",
+      "featured": true
+    },
+    {
+      "id": "campaign-abyudaya",
+      "category": "campaign",
+      "categoryLabel": "Campaigns",
+      "company": "PT Abyudaya Sahwahita Nastari",
+      "title": "KOL & Brand Campaign Development",
+      "role": "Campaign Management",
+      "outcome": "100% brand visibility increase via KOL partnerships",
+      "image": "src/img/works/2.jpg",
+      "imageAlt": "KOL campaign development",
+      "link": "https://drive.google.com/drive/folders/1Ax2EriGrmRb16EKAssxViO1TL52K-1a3?usp=sharing",
+      "featured": true
+    },
+    {
+      "id": "marketing-abyudaya",
+      "category": "marketing",
+      "categoryLabel": "Marketing",
+      "company": "PT Abyudaya Sahwahita Nastari",
+      "title": "Meta Ads & Funnel Strategy",
+      "role": "Digital Marketing",
+      "outcome": "Paid campaigns and reseller channel growth strategy",
+      "image": "src/img/works/3.jpg",
+      "imageAlt": "Digital marketing and paid ads",
+      "link": "https://drive.google.com/drive/folders/1EuDinhiN9RMEL3BEoorh5S_SzfElA7GN?usp=sharing",
+      "featured": true
+    },
+    {
+      "id": "analytics-bulog",
+      "category": "analytics",
+      "categoryLabel": "Analytics",
+      "company": "Perum BULOG",
+      "title": "Performance Tracking & Reporting",
+      "role": "Analytics & Insights",
+      "outcome": "30% social media engagement increase with data-driven optimization",
+      "image": "src/img/works/4.jpg",
+      "imageAlt": "Social media analytics and reporting",
+      "link": "https://drive.google.com/drive/folders/1mp4KRFJzlKDAZgdxsC9WmQLJh3JT8mQ9?usp=sharing",
+      "featured": true
+    },
+    {
+      "id": "strategy-lencir",
+      "category": "strategy",
+      "categoryLabel": "Strategy",
+      "company": "Lencir Indonesia",
+      "title": "Cross-Platform Social Strategy",
+      "role": "Strategy & Planning",
+      "outcome": "End-to-end Instagram & TikTok roadmap for reach and conversions",
+      "image": "src/img/works/5.jpg",
+      "imageAlt": "Social media strategy planning",
+      "link": "https://drive.google.com/drive/folders/1J5Ikctp9XpbclIFKLu_5tiIkU6JWU_MA?usp=sharing",
+      "featured": true
+    },
+    {
+      "id": "community-bulog",
+      "category": "community",
+      "categoryLabel": "Community",
+      "company": "Perum BULOG",
+      "title": "Partner & Community Engagement",
+      "role": "Community Building",
+      "outcome": "50+ partner relationships with 95% retention rate",
+      "image": "src/img/works/6.jpg",
+      "imageAlt": "Community building and engagement",
+      "link": "https://drive.google.com/drive/folders/1Idet-RMFK1YhF13x-1SahhXQKXlHeXnm?usp=sharing",
+      "featured": true
+    }
+  ]
+}
